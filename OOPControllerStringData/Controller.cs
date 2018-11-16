@@ -16,7 +16,7 @@ namespace ControllerStringDataProcessing
         }
         public void readFromFile()
         {
-            StreamReader sr = new StreamReader("adatok.txt");
+            StreamReader sr = new StreamReader("adatok.txt", Encoding.UTF8);
             while(!sr.EndOfStream)
             {
                 string line = sr.ReadLine();
